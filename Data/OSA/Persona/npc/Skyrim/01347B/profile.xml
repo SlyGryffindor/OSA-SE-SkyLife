@@ -3,12 +3,118 @@
 <properties>
 <nameFirst v="Camilla"/>
 <nameLast v="Valerius"/>
-<race v="Imperial"/>
-</properties>	
+<nameColor v="8314ec"/>
+<age v="26"/>
+<color v="7c0cee"/>
+<title v="Beauty of Riverwood"/>
+<race v="Imperial-Colovian"/>
+<species v="Human"/>
+<nickname v="'Sunrise Ruby'"/>
+<classType v="Merchant"/>
+<classLevel v="4"/>
+<classSkill v="Apprentice"/>
+<profession v="General"/>
+<nation v="Cyrodiil"/>
+<primarySkill v="Speech"/>
+<secondarySkill v="Trading"/>
+<tertiarySkill v="1H-weapon"/>
+<father v="Nimbenean Father"/>
+<mother v="Colovian Mother"/>
+<birthMonth v="Sun's Height"/>
+<birthDate v="14"/>
+<birthSign v="The Apprentice"/>
+<birthStone v="Ruby"/>
+<belief v="Agnostic"/>
+<diety v="None"/>
+<Orientation v="Straight"/>
+</properties>
+
 
 <command>
-<name v="{nameFirst} {nameLast}"/>	
-<race v="{race}"/>
+<name v="{nameFirst} {nameLast}"/>
+<race v="{species} | {race}"/>
 <height v="67" units="1"/>
-<weight v="135" units="1"/>
+<weight v="144" units="1"/>
 </command>
+
+<override>
+<name v="{{name}}"/>
+<race v="{species}"/>
+</override>
+
+<brass type="basic">
+<block v="{{name}}" color="{nameColor}" dnv="{title}"/>
+</brass>
+
+<splash t="OVERVIEW" icon="omu_profile" type="vsplit">
+<frame type="headrpgfull" style="full">
+<mainblock v="{{name}}" color="{nameColor}" dnv="{title}"/>
+<longblock v="{{race}}" dnv="of {nation}" genSymbol="1"/>
+<rightblock v="{nickname}" color="" upv="" dnv="In a relationship"/>
+<leftblock v="{classType}" color="" upv="{classSkill}" dnv="Lv {classLevel}"/>
+</frame>
+<frame type="statsheet">
+<stat cmd="header" t="BODY"/>
+<stat t="Weight" v="{{weight}}"/>
+<stat t="Height" v="{{height}}"/>
+<stat t="Age" v="{age}"/>
+<stat t="Physique" v="Slim"/>
+<stat cmd="header" t="SKILLS"/>
+<stat t="Primary" v="{primarySkill}"/>
+<stat t="Secondary" v="{secondarySkill}"/>
+<stat t="Other" v="{tertiarySkill}"/>
+<stat cmd="header" t="Astrology"/>
+<stat t="Birthdate" v="{birthMonth},{birthDate}"/>
+<stat t="Sign" v="{birthSign}"/>
+<stat t="Stone" v="{birthStone}"/>
+<stat cmd="header" t="Heritage"/>
+<stat t="Nation" v="{nation}"/>
+<stat t="Birthplace" v="Colovia"/>
+<stat t="species" v="{species}"/>
+<stat t="Family Name" v="Valerius"/>
+<stat cmd="header" t="Occupation"/>
+<stat t="Class" v="{classType}"/>
+<stat t="Profession" v="{profession}"/>
+<stat cmd="header" t="Religion"/>
+<stat t="Belief" v="{belief}"/>
+<stat t="Diety" v="{diety}"/>
+<stat cmd="header" t="Libido"/>
+<stat t="Orientation" v="{Orientation}"/>
+</frame>
+</splash>
+
+<panel t="BIOGRAPHY" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="8.5" fkern="1.1" fleading="1.5" findent="50"/>
+<box width="400"/>
+<line color="" thick="1"/>
+<title v="From one war to another" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="On Camilla..." fstyle="1" fcolor="" fsize="11" fkern="1.1" fleading="5"/>
+</title>
+<page v="	When Camilla came of age, suiters in Anvil began to ask for her hand in marriage, but she was more interested in her guild which was like a second family to her. They took care of her when her parents were out traveling, and showed her around the city whenever they had to leave the guild. Unfortunately, the Great War broke out and all dreams of growing up with her guild were crushed. Her father decided it was better to escape Cyrodiil and set out for Skyrim. After a long journey, the Valerius family crossed the border and settled in Riverwood where Lucan Valerius, Camilla’s brother, had made home after falling in love with a Nord woman. With some remaining trinkets from Cyrodiil, the Valerius family opened the Riverwood Trader and became a successful business in the town. The journey had taken its toll on Falx and Isobel Valerius, however, and they passed away a year after opening the Trader. 
+	Although Camilla was an outsider, her beauty was unrivaled in the region and men were quick to try and court her. She was constantly pursued after by the men in her own town, as well as those from Whiterun who had heard rumors of a beautiful Imperial woman who was both intelligent and eloquent. However, only two gained at least a small amount of attention from her. One was a Nord bard from her village named Sven who had helped the Valerius family get permission from the town to open the Trader. Another was a Bosmer elf named Faendal who frequented the Riverwood Trader and brought food he had hunted for Camilla’s parents when they were sick. One of them may have been able to win over Camilla’s heart if she wasn’t so stressed over the breaking of the Civil War, the second war she had seen in her lifetime.
+ ">
+</page>
+</frame>
+</panel>
+
+<panel t="FATHER'S JOURNAL" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="10" fkern="1.1" fleading="1.5" findent="50"/>
+<box width="400"/>
+<line color="" thick="1"/>
+<title v="" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="Middas, 19th day of Rain’s Hand, 4E 152" fstyle="1" fcolor="" fsize="11" fkern="1.1" fleading="5"/>
+</title>
+<page v="	It’s been 6 months since Isobel has been pregnant with our second child. I wish to be able to be by her side more often, but the guild has been receiving more and more requests lately and my skills are needed for negotiations. If these next couple ones go well, our guild may be well on our way in becoming the most prosperous merchant guild in Anvil. 
+On my last trip, I was in the western region and picked up some Domica Redwort for Isobel. Oh how she smiled playfully when she saw them! “It’s not like I need these to appear more beautiful to you” she said, and she’s right. Ever since I first stepped into this guild, she’s been the only woman I’ve been more interested in talking about her than about trading. I still remember how brightly her eyes would shine when I told her stories about the Nimbenay Valley that I grew up in. Once our second child is grown and healthy, I wish to take my family on a trip to my home regions and show them the places from my stories. Maybe I can even convince our guild to start a trade relation with the Nimbeneans. 
+It’s late today and ever since getting back from my previous trip, I haven’t been able to spend much time with Lucan. I think I’ll spend the rest of the evening with him and Isobel, and share with them my idea for the name of our second : Camillo if it’s a son, and Camilla it it’s a daughter. I do hope it’s a daughter. 
+									Falx Valerius
+">
+</page>
+</frame>
+</panel>
