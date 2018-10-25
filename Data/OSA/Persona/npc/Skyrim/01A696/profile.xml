@@ -2,15 +2,141 @@
 
 <properties>
 <nameFirst v="Aela"/>
-<nameLast v=""/>
-<title v="The Huntress"/>
+<nameLast v="Blackblade"/>
+<nameColor v="74A6E5"/>
+<age v="36"/>
+<color v="E1913D"/>
+<title v="Loyal Wolf of Jorrvaskr"/>
 <race v="Nord"/>
-</properties>	
+<species v="Human"/>
+<nickname v="'The Huntress'"/>
+<classType v="Thief"/>
+<classLevel v="81"/>
+<classSkill v="Expert"/>
+<profession v="Companion"/>
+<nation v="Skyrim"/>
+<primarySkill v="Archery"/>
+<secondarySkill v="Light Armor"/>
+<tertiarySkill v="Sneak"/>
+<father v="Nord Father"/>
+<mother v="Nord Mother"/>
+<birthMonth v="Sun's Height"/>
+<birthDate v="23"/>
+<birthSign v="The Apprentice"/>
+<birthStone v="Ruby"/>
+<belief v="Nordic Pantheon"/>
+<diety v="Kyne"/>
+<Orientation v="Straight"/>
+</properties>
+
 
 <command>
-<name v="{nameFirst}"/>	
-<race v="{race}"/>
-<title v="{title}"/>
-<height v="67" units="1"/>
-<weight v="135" units="1"/>
+<name v="{nameFirst} {nameLast}"/>
+<race v="{species} | {race}"/>
+<height v="70" units="1"/>
+<weight v="152" units="1"/>
 </command>
+
+<override>
+<name v="{{name}}"/>
+<race v="{species}"/>
+</override>
+
+<brass type="basic">
+<block v="{{name}}" color="{nameColor}" dnv="{title}"/>
+</brass>
+
+<splash t="OVERVIEW" icon="omu_profile" type="vsplit">
+<frame type="headrpgfull" style="full">
+<mainblock v="{{name}}" color="{nameColor}" dnv="{title}"/>
+<longblock v="{{race}}" dnv="of {nation}" genSymbol="1"/>
+<rightblock v="{nickname}" color="" upv="" dnv="Single"/>
+<leftblock v="{classType}" color="" upv="{classSkill}" dnv="Lv {classLevel}"/>
+</frame>
+<frame type="statsheet">
+<stat cmd="header" t="BODY"/>
+<stat t="Weight" v="{{weight}}"/>
+<stat t="Height" v="{{height}}"/>
+<stat t="Age" v="{age}"/>
+<stat t="Physique" v="Athletic"/>
+<stat cmd="header" t="SKILLS"/>
+<stat t="Primary" v="{primarySkill}"/>
+<stat t="Secondary" v="{secondarySkill}"/>
+<stat t="Other" v="{tertiarySkill}"/>
+<stat cmd="header" t="Astrology"/>
+<stat t="Birthdate" v="{birthMonth},{birthDate}"/>
+<stat t="Sign" v="{birthSign}"/>
+<stat t="Stone" v="{birthStone}"/>
+<stat cmd="header" t="Heritage"/>
+<stat t="Nation" v="{nation}"/>
+<stat t="Birthplace" v="Whiterun"/>
+<stat t="Species" v="{species}"/>
+<stat t="Family Name" v="Blackblade"/>
+<stat cmd="header" t="Occupation"/>
+<stat t="Class" v="{classType}"/>
+<stat t="Profession" v="{profession}"/>
+<stat cmd="header" t="Religion"/>
+<stat t="Belief" v="{belief}"/>
+<stat t="Diety" v="{diety}"/>
+<stat cmd="header" t="Libido"/>
+<stat t="Orientation" v="{Orientation}"/>
+</frame>
+</splash>
+
+<panel t="BIOGRAPHY" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="8.5" fkern="1.1" fleading="1.5" findent="50"/>
+<box width="400"/>
+<line color="" thick="1"/>
+<title v="Resolve of a Female Alpha" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="On Aela..." fstyle="1" fcolor="" fsize="11" fkern="1.1" fleading="5"/>
+</title>
+<page v="	As a child, Jorrvaskr was Aela’s favorite playground. Her family had a long line of female companions and her mother, Asta Blackblade, would tell Aela stories of the adventures that she went on with her shield-brothers and sisters. At the age of 6, Aela had already been tinkering with her first bow made for her personally by Eorlund Gray-Mane. When her mother was out with her other Companions, Aela spent most of her time hunting in the woods of Falkreath and the Rift with her father. It is here that she learned the art of the bow and came to know the rush of the hunt. Aela’s skill with the bow was so precise that she was able to shoot all three eyes of a troll from across a river. At the age of 9, Aela’s father went to join the army to aid Cyrodiil in the Great War and even though Companions do not align with any political factions, Asta secretly followed her husband to fight alongside him, leaving Aela in the care of Eorlund. It is rumored that before they fell, both Blackblades each took more than 30 Aldmeri warriors with them in the retaking of the Imperial City. 
+	After the death of her parents, Jorrvaskr became Aela’s training ground and home. Inspired by the ferocity of her parents, she turned her bitterness into resolve and put herself under intense training, spending day and night hacking and shooting at the practice dummies. However, she vowed that she would stay a hunter and not a warrior, for becoming a warrior meant that she would have to fight and die for someone else’s purpose. Later, she befriended a sellsword named Skjor whom she had met on one of her hunts. Aela had walked into a cave full of bears and Skjor, who heard the roars from afar, came rushing in just in time to skewer a bear who was just about to swipe at Aela’s unprotected back. At the age of 18, Aela took her Trail and soon became one of the members of The Circle amongst the companions. Here, alongside Skjor, Aela would fine her place alongside a pack of other hunters whom she would spent the rest of her days hunting and fighting, for no one else’s glory but their own.
+">
+</page>
+</frame>
+</panel>
+
+<panel t="Memories" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="10" fkern="1.1" fleading="1.5" findent=""/>
+<box width="400"/>
+<line color="74A6E5" thick="1"/>
+<title v="Conversation with Skjor" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="17th of Evening Star, 4E 181" fstyle="1" fcolor="" fsize="9" fkern="1.1" fleading="5"/>
+</title>
+<page v="While camping out in the Rift, dinner time
+
+“The hide is one of the tastiest parts of the Skeever! We need to leave it to char all the way until it gets crisp”
+
+“Who would have known the best archer in Whiterun would also be so good with a campfire!” exclaims Skjor
+
+“It’s natural for hunters. My father and I cooked all sorts of animals after our hunts and so I learned from him”
+
+“Do you think about him often?” 
+
+“…”
+
+“Sorry, I didn’t mean to pry. You don’t have to answer that question”
+
+“It’s ok. When I come out on these hunts, I am reminded of the times I spent with him. Whenever my arrow hits an Elk, I can hear his voice telling me ‘well shot Aela, you may even surpass me one day’ and almost feel the familiar slap on my shoulder”
+
+“…” 
+Skjor nods, indicating that he is listening
+
+“The hunt is special to me because it makes me feel connected to the people I miss the most. The things my father and I shared and the stories my mother told me…they come alive when I hunt”
+
+Skjor adds more firewood to the campfire
+“Well at least now you won’t have to hunt alone anymore”
+
+Aela smiles
+“Same time again next week?” she asks
+">
+</page>
+</frame>
+</panel>
