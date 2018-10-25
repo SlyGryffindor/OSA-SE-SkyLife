@@ -6,6 +6,7 @@ Aela		skyrim 		01A696
 Annekke		skyrim 		013666
 Camilla		skyrim 		01347B
 Elisif		skyrim 		01326A
+Illia   skyrim    048C2F
 Lydia		skyrim 		0A2C8E
 Mjoll		skyrim 		01336B
 Sapphire	skyrim 		0C19A3
