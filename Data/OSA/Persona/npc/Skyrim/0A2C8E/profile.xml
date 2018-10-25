@@ -1,16 +1,100 @@
-<global></global>	
+<global></global>
 
 <properties>
 <nameFirst v="Lydia"/>
 <nameLast v=""/>
+<nameColor v="8314ec"/>
+<age v="28"/>
+<color v="7c0cee"/>
+<title v="The Loyal Hand"/>
 <race v="Nord"/>
-<title v="Housecarl"/>
-</properties>	
+<species v="Human"/>
+<nickname v="'Sworn Protector'"/>
+<classType v="Shield-maiden"/>
+<classLevel v="40"/>
+<classSkill v="Master"/>
+<profession v="Housecarl"/>
+<nation v="Skyrim"/>
+<primarySkill v="2H-weapon"/>
+<secondarySkill v="Light Armor"/>
+<tertiarySkill v="1H-weapon"/>
+<father v="Nord Father"/>
+<mother v="Nord Mother"/>
+<birthMonth v="Last Seed"/>
+<birthDate v="19"/>
+<birthSign v="The Warrior"/>
+<birthStone v="Peridot"/>
+<belief v="Nine Divines"/>
+<diety v="Mara"/>
+<Orientation v="Straight"/>
+</properties>
+
 
 <command>
-<name v="{nameFirst}"/>	
-<race v="{race}"/>
-<title v="{title}"/>
-<height v="67" units="1"/>
-<weight v="135" units="1"/>
+<name v="{nameFirst} {nameLast}"/>
+<race v="{species} | {race}"/>
+<height v="69" units="1"/>
+<weight v="172" units="1"/>
 </command>
+
+<override>
+<name v="{{name}}"/>
+<race v="{species}"/>
+</override>
+
+<brass type="basic">
+<block v="{{name}}" color="{nameColor}" dnv="{title}"/>
+</brass>
+
+<splash t="OVERVIEW" icon="omu_profile" type="vsplit">
+<frame type="headrpgfull" style="full">
+<mainblock v="{{name}}" color="{nameColor}" dnv="{title}"/>
+<longblock v="{{race}}" dnv="of {nation}" genSymbol="1"/>
+<rightblock v="{nickname}" color="" upv="{profession}" dnv="Devoted to Mara"/>
+<leftblock v="{classType}" color="" upv="{classSkill}" dnv="Lv {classLevel}"/>
+</frame>
+<frame type="statsheet">
+<stat cmd="header" t="BODY"/>
+<stat t="Weight" v="{{weight}}"/>
+<stat t="Height" v="{{height}}"/>
+<stat t="Age" v="{age}"/>
+<stat t="Physique" v="Athletic"/>
+<stat cmd="header" t="SKILLS"/>
+<stat t="Primary" v="{primarySkill}"/>
+<stat t="Secondary" v="{secondarySkill}"/>
+<stat t="Other" v="{tertiarySkill}"/>
+<stat cmd="header" t="Astrology"/>
+<stat t="Birthdate" v="{birthMonth},{birthDate}"/>
+<stat t="Sign" v="{birthSign}"/>
+<stat t="Stone" v="{birthStone}"/>
+<stat cmd="header" t="Heritage"/>
+<stat t="Nation" v="{nation}"/>
+<stat t="Birthplace" v="Whiterun"/>
+<stat t="species" v="{species}"/>
+<stat t="Family Name" v="None"/>
+<stat cmd="header" t="Occupation"/>
+<stat t="Class" v="{classType}"/>
+<stat t="Profession" v="{profession}"/>
+<stat cmd="header" t="Religion"/>
+<stat t="Belief" v="{belief}"/>
+<stat t="Diety" v="{diety}"/>
+<stat cmd="header" t="Libido"/>
+<stat t="Orientation" v="{Orientation}"/>
+</frame>
+</splash>
+
+<panel t="BIOGRAPHY" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="8.5" fkern="1.1" fleading="1.5" findent="50"/>
+<box width="400"/>
+<line color="" thick="1"/>
+<title v="A Wolf at Heart" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="On Lydia…" fstyle="1" fcolor="" fsize="11" fkern="1.1" fleading="5"/>
+</title>
+<page v="	The citizens of Whiterun have little memory about Lydia’s father. He showed up at the Bannered Mare one stormy day, hungry, tired and exhausted from walking through the rain. The inn was unusually packed that night and although he bought some food with the few septims that he had, there was no room available for him to stay in. Ullia worked as a maid at the Bannered Mare at the time and offered the man to stay the night in the kitchen beneath her bedchambers. That night, Ullia never retired to her bed chambers and the next day, she and the man were gone. A couple of weeks later, a Whiterun guard found Ullia collapsed by the stables with a baby girl in her arms. The man was nowhere to be seen and Ullia, looking tattered and somewhat sad, refused to talk about him. 
+	In the upcoming years, the baby girl would grow up with the boys of clan Battle-Born and Grey-Mane. They would spend their days watching and imitating the Companions at Jorrvaskr, dreaming that one day they would be fierce warriors themselves. Lydia was particularly strong for a girl her age, and developed a liking for the twin brothers, Vilkas and Farkas, who taught her the art of two handed weapons. Although Lydia wished to become a Companion, her mother Ullia wished Lydia to stay safe spoke against the idea of an adventurous life as Lydia was the only family she had. Lydia respected her mother’s wish and became a Housecarl, sworn to serve the thane of Whiterun. Even after her mother passed away, Lydia stayed true to that wish, but her lust for adventure remained unsatisfied."> 
+</page>
+</frame>
+</panel>
