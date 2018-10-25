@@ -1,0 +1,131 @@
+<global></global>
+
+<properties>
+<nameFirst v="Illia"/>
+<nameLast v="Helenus"/>
+<nameColor v="74A6E5"/>
+<age v="23"/>
+<color v="08088A"/>
+<title v="A Daughter's Betrayal"/>
+<race v="Imperial-Nibenean"/>
+<species v="Human"/>
+<nickname v="'Vengeful Raven'"/>
+<classType v="Mage"/>
+<classLevel v="12"/>
+<classSkill v="Adept"/>
+<profession v="Blade"/>
+<nation v="Cyrodiil"/>
+<primarySkill v="Destruction"/>
+<secondarySkill v="Restoration"/>
+<tertiarySkill v="Conjuration"/>
+<father v="Nibenean Father"/>
+<mother v="Nibenean Mother"/>
+<birthMonth v="Sun's Dusk"/>
+<birthDate v="23"/>
+<birthSign v="The Atronach"/>
+<birthStone v="Citrine"/>
+<belief v="Nine Divines"/>
+<diety v="Arkay"/>
+<Orientation v="Straight"/>
+</properties>
+
+
+<command>
+<name v="{nameFirst} {nameLast}"/>
+<race v="{species} | {race}"/>
+<height v="70" units="1"/>
+<weight v="152" units="1"/>
+</command>
+
+<override>
+<name v="{{name}}"/>
+<race v="{species}"/>
+</override>
+
+<brass type="basic">
+<block v="{{name}}" color="{nameColor}" dnv="{title}"/>
+</brass>
+
+<splash t="OVERVIEW" icon="omu_profile" type="vsplit">
+<frame type="headrpgfull" style="full">
+<mainblock v="{{name}}" color="{nameColor}" dnv="{title}"/>
+<longblock v="{{race}}" dnv="of {nation}" genSymbol="1"/>
+<rightblock v="{nickname}" color="" upv="" dnv="Single"/>
+<leftblock v="{classType}" color="" upv="{classSkill}" dnv="Lv {classLevel}"/>
+</frame>
+<frame type="statsheet">
+<stat cmd="header" t="BODY"/>
+<stat t="Weight" v="{{weight}}"/>
+<stat t="Height" v="{{height}}"/>
+<stat t="Age" v="{age}"/>
+<stat t="Physique" v="Curvy"/>
+<stat cmd="header" t="SKILLS"/>
+<stat t="Primary" v="{primarySkill}"/>
+<stat t="Secondary" v="{secondarySkill}"/>
+<stat t="Other" v="{tertiarySkill}"/>
+<stat cmd="header" t="Astrology"/>
+<stat t="Birthdate" v="{birthMonth},{birthDate}"/>
+<stat t="Sign" v="{birthSign}"/>
+<stat t="Stone" v="{birthStone}"/>
+<stat cmd="header" t="Heritage"/>
+<stat t="Nation" v="{nation}"/>
+<stat t="Birthplace" v="Cheydinhal"/>
+<stat t="species" v="{species}"/>
+<stat t="Family Name" v="Helenus"/>
+<stat cmd="header" t="Occupation"/>
+<stat t="Class" v="{classType}"/>
+<stat t="Profession" v="{profession}"/>
+<stat cmd="header" t="Religion"/>
+<stat t="Belief" v="{belief}"/>
+<stat t="Diety" v="{diety}"/>
+<stat cmd="header" t="Libido"/>
+<stat t="Orientation" v="{Orientation}"/>
+</frame>
+</splash>
+
+<panel t="BIOGRAPHY" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="8.5" fkern="1.1" fleading="1.5" findent="50"/>
+<box width="400"/>
+<line color="" thick="1"/>
+<title v="The Frozen Bird" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="On Illia..." fstyle="1" fcolor="" fsize="11" fkern="1.1" fleading="5"/>
+</title>
+<page v="	Illia grew up loving nature and being amongst it. The open plains of the Nibenay Basin where she grew up had been her favorite place to practice her magic. Her mother Silvia was a conjurer and taught her daughter aspects of the art. Illia befriended many animals in the Basin. She had a particular liking towards birds, and could conjure bird familiars at a very young age. Her parents were delighted at her aptitude and soon the rumor had spread that a young child was to be initiated into the Mage Guild in Cheydinhal. However, sorrow found its way into her life when her father was killed by the Dark Brotherhood who had received a contract from a rival mage with a grudge. Illia and her mother Silvia, fearing the presence of the Dark Brotherhood in the city, fled east into the Valus Mountains where they lived amongst Dunmer refugees in mountains.
+	The mountains were cold, unfamiliar, and very different from the plains.  Silvia insisted that Illia learn destruction magic to protect herself so that she wouldn’t meet the same fate as her father. Reluctantly, Illia turned away from conjuration that she had loved so much and studied destruction under the Dunmer. Silvia was captivated by the element of fire that she had grown to envy in the Dunmer but Illia became quite interested in molding and manipulating ice. The more they learned, the more her mother became obsessed with fire magic, and eventually that was all she would care about. One day, she returned home and told Illia ‘We are leaving’. She had heard from a traveler that witches up north had found a way to become master manipulators of destructive fire magic, and said that she must go to see herself. So, the daughter and mother left their home behind and journeyed to the cold, unforgiving, harsh lands of Skyrim.
+">
+</page>
+</frame>
+</panel>
+
+<panel t="Prayer to Arkay" type="vsplit" icon="omu_profile">
+<frame></frame>
+<frame type="longtext">
+<brass ix="0"/>
+<font fstyle="1" fcolor="" fsize="10" fkern="1.1" fleading="1.5" findent="50"/>
+<box width="400"/>
+<line color="" thick="1"/>
+<title v="Prayer to Arkay" fstyle="1" fcolor="" fsize="15" fkern="1.1" fleading="">
+<subtitle v="" fstyle="1" fcolor="" fsize="11" fkern="1.1" fleading="5"/>
+</title>
+<page v="What is born must die, what is made must perish
+
+Back to the beginning, where it will once again nourish
+
+The next cycle of existence that will today
+
+Fill the void left behind life’s cruel dismay
+
+Oh healing I seek in the arms of you
+
+Where life and death are no longer two
+
+Beginning and end are life’s greatest illusion
+
+Continuing on is but the solution
+">
+</page>
+</frame>
+</panel>
